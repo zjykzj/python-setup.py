@@ -92,7 +92,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=URL,
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     classifiers=CLASSIFIERS,
     python_requires=PYTHON_REQUIRES,
     entry_points={
