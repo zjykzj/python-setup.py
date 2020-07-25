@@ -12,6 +12,26 @@ import os
 import shutil
 import sys
 
+# ---------------------- #
+# 超参数设置
+NAME = "python-setup"
+AUTHOR = "zj"
+AUTHOR_EMAIL = "wy163zhuj@163.com"
+DESCRIPTION = "A small example package"
+URL = "https://github.com/zjZSTU/python-setup.py.git"
+PYTHON_REQUIRES = ">=3.6"
+INSTALL_REQUIRES = [
+    "yacs >= 0.1.7",
+    "opencv_contrib_python >= 4.2.0",
+    "numpy >= 1.17.2"
+]
+CLASSIFIERS = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License"
+]
+# ---------------------- #
+
 
 class UploadCommand(setuptools.Command):
     """Support setup.py upload."""
@@ -64,21 +84,17 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="python-setup",  # Replace with your own username
+    name=NAME,  # Replace with your own username
     version=get_version(),
-    author="zj",
-    author_email="wy163zhuj@163.com",
-    description="A small example package",
+    author=AUTHOR,
+    author_email=AUTHOR_EMAIL,
+    description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/zjZSTU/python-setup.py.git",
+    url=URL,
     packages=setuptools.find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=3.6',
+    classifiers=CLASSIFIERS,
+    python_requires=PYTHON_REQUIRES,
     entry_points={
         'console_scripts': [
             'print_hello = python_setup.tools.cli:main'
