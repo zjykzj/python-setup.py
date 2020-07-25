@@ -8,13 +8,24 @@
 """
 
 import setuptools
+import os
+
+
+def get_version():
+    init_py_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "lib", "__init__.py")
+    init_py = open(init_py_path, "r").readlines()
+    version_line = [l.strip() for l in init_py if l.startswith("__version__")][0]
+    version = version_line.split("=")[-1].strip().strip("'\"")
+
+    return version
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="python-setup",  # Replace with your own username
-    version="0.0.1",
+    version=get_version(),
     author="zj",
     author_email="wy163zhuj@163.com",
     description="A small example package",
