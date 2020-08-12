@@ -18,7 +18,7 @@ NAME = "python-setup"
 AUTHOR = "zj"
 AUTHOR_EMAIL = "wy163zhuj@163.com"
 DESCRIPTION = "A small example package"
-URL = "https://github.com/zjZSTU/python-setup.py.git"
+URL = "https://github.com/zjykzj/python-setup.py.git"
 PYTHON_REQUIRES = ">=3.6"
 INSTALL_REQUIRES = [
     "yacs >= 0.1.7",

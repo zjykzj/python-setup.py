@@ -17,7 +17,7 @@
 
 ## 主要维护人员
 
-* zhujian - *Initial work* - [zjZSTU](https://github.com/zjZSTU)
+* zhujian - *Initial work* - [zjykzj](https://github.com/zjykzj)
 
 ## 致谢
 
@@ -26,7 +26,7 @@
 
 ## 参与贡献方式
 
-欢迎任何人的参与！打开[issue](https://github.com/zjZSTU/python-setup.py/issues)或提交合并请求。
+欢迎任何人的参与！打开[issue](https://github.com/zjykzj/python-setup.py/issues)或提交合并请求。
 
 注意:
 
@@ -36,4 +36,4 @@
 
 ## 许可证
 
-[Apache License 2.0](LICENSE) © 2020 zjZSTU
+[Apache License 2.0](LICENSE) © 2020 zjykzj
