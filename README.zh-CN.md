@@ -16,7 +16,7 @@
   <a href="https://pypi.org/project/python-setup/"><img src="https://img.shields.io/badge/PYPI-python--setup.py-brightgreen"></a>
 </p>
 
-* [打包和分发Python程序](https://zj-image-processing.readthedocs.io/zh_CN/latest/python/%E6%89%93%E5%8C%85%E5%92%8C%E5%88%86%E5%8F%91Python%E7%A8%8B%E5%BA%8F/)
+* [打包和分发Python程序](https://visionguide.readthedocs.io/zh_CN/latest/python/tool/%E6%89%93%E5%8C%85%E5%92%8C%E5%88%86%E5%8F%91Python%E7%A8%8B%E5%BA%8F/)
 
 ## 内容列表
 
